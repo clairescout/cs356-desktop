@@ -9,22 +9,25 @@ import { SubmitReviewComponent } from './submit-review/submit-review.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { BookDetailsModule } from './book-details/book-details.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { SearchModule } from './search/search.module';
+import { SubmitReviewModule } from './submit-review/submit-review.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookDetailsComponent,
-    SearchComponent,
-    SubmitReviewComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    CommonModule
+    CommonModule,
+    BookDetailsModule,
+    DashboardModule,
+    SearchModule,
+    SubmitReviewModule
   ],
-  providers: [BookDetailsComponent],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
