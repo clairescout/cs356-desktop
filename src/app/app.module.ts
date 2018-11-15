@@ -7,6 +7,7 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { SearchComponent } from './search/search.component';
 import { SubmitReviewComponent } from './submit-review/submit-review.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BookDetailsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
