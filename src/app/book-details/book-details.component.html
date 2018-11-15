@@ -2,4 +2,4 @@
   book-details works!
 </p>
 
-<img [src]="currentBook.imageLinks.thumbnail"/>
+<img *ngIf="loaded" [src]="currentBook.imageLinks.thumbnail"/>

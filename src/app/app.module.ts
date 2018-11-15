@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { SubmitReviewComponent } from './submit-review/submit-review.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [BookDetailsComponent],
   bootstrap: [AppComponent]
